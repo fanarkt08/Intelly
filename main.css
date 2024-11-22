@@ -1,0 +1,277 @@
+h5 {
+    font-family: "Poppins", sans-serif;
+    color: rgb(8, 36, 49, 0.5);
+    font-size: 11px;
+}
+
+h2 {
+    font-family: "Poppings", sans-serif;
+    font-size: 24px;
+    color: rgba(31, 56, 76, 1);
+    font-weight: normal;
+}
+
+h4 {
+    font-family: "Poppings", sans-serif;
+    font-size: 16px;
+    color: #80809C;
+    font-weight: normal;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+#logo {
+    max-width: 100px;
+    max-height: auto;
+}
+
+#navbar-search {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(1, 0, 57, 0.04);
+    border-radius: 5px;
+    width: 40vw;
+    margin: 10px;
+    margin-right: 50px;
+}
+
+#topnav-search {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none; 
+    outline: none;
+    background-color: transparent;
+    width : 100%;
+    margin: 10px;
+}
+
+#search-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    color: #627B87
+}
+
+#food {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+#food-type {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#food-logo {
+    position: relative;
+    display: inline-block;
+    color: #D8740B;
+    background-color: #FFE6CC;
+    border-radius: 50%;
+    border: 6px solid #FFE6CC;
+}
+
+#food {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ffffff;
+    padding: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#food-select {
+    display: flex;
+    align-items: center;
+}
+
+#chevron-down {
+    display: flex;
+    color: rgba(31, 56, 76, 0.5);
+    align-items: center
+}
+
+#alert-corner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#alert-icon {
+    font-size: 24px; /* Adjust size of the bell */
+    color: #B0C3CC; /* Adjust color of the bell */
+}
+
+.red-dot {
+    display: flex;
+    justify-content: flex-end;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid white;
+}
+
+/* */
+#main-container{
+    display: flex;
+    justify-content: flex-start;
+    width : 100vw
+}
+
+#sidebar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 25vw;
+    height: 100vh;
+    background-color: rgba(1, 0, 57, 0.04);
+    padding: 15px
+}
+
+#menu, #system {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+#side-main {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+    padding : 12px;
+    color: rgba(80, 65, 120, 1);
+    background-color: rgba(80, 65, 120, 0.2);
+    border-radius: 10%;
+}
+
+.side-option {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+    padding: 12px;
+    color: #767D87
+}
+
+.option-icon {
+    padding-right: 15px;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    width: 100%;
+    background-color:rgba(246, 248, 250, 1)
+}
+
+#card-section {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les cartes */
+    gap: 20px; /* Espacement entre chaque carte */
+    padding: 20px; /* Marge intérieure pour l'ensemble */
+}
+
+/* Carte */
+.card {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    border-radius: 12px; 
+    padding: 20px;
+    width: 100%; 
+    height: 100%;
+    background-color: white;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #7b4397, #dc2430);
+    border-radius: 10px; 
+}
+
+.card-img i {
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* Conteneur du texte */
+.text-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.card-value {
+    align-items: flex-start;
+}
+
+.card-value {
+    align-items: flex-end;
+}
+
+#stat-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+#overview-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+#overview-table {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%
+}
+td {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#page-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+#pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+#current-page, #other-page {
+    text-align: center;
+    width: 20px;
+    height: 20px
+}

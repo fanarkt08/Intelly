@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fana">
+    <title>Intelly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<header>
+    <nav id="navbar">
+        <img src="logotype.png" alt="logo" id="logo"> 
+        <div id="navbar-search">
+            <input type="text-area" name="topnav-search" placeholder="Search" id="topnav-search">
+            <div id="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    
+        <div id="food-type">
+            <div id="food-logo">
+                <i class="fas fa-burger"></i>
+            </div>
+            <div id="food-select">
+                <select name="food" id="food">
+                    <option value="burger">Delicious Burger</option>
+                    <option value="Pizza">Delicious Pizza</option>
+                    <option value="pasta">Delicious Pasta</option>
+                </select>
+            </div>
+            <i class="fas fa-chevron-down" id="chevron-down"></i>
+        </div>
+        <div id="alert-corner">
+            <div id="alert-icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <span class="red-dot">
+            </span>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div id="main-container">
+        <nav id="sidebar">
+            <div id="menu">
+                <span id="menu-title"> 
+                    <h5>
+                        MENU
+                    </h5>
+                </span>
+                <div id="side-main">
+                    <span class="option-icon">
+                        <i class="fas fa-box"></i>
+                    </span>
+                    <span class="option-title">
+                        Order
+                    </span>
+                </div>
+                <div class="side-option">
+                    <span class="option-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <span class="option-title">
+                        Report
+                    </span>
+                </div>
+                <div class="side-option">
+                    <span class="option-icon">
+                        <i class="fas fa-truck" ></i>
+                    </span>
+                    <span class="option-title">
+                        Track
+                    </span>
+                </div>
+                <div class="side-option">
+                    <span class="option-icon">
+                        <i class="fas fa-tools"></i>
+                    </span>
+                    <span class="option-title">
+                        Maintainance
+                    </span>
+                </div>
+            </div>
+            <div id="system">
+                <div id="system-title">
+                    <h5>
+                        SYSTEM
+                    </h5>
+                </div>
+                <div class="side-option">
+                    <span class="option-icon">
+                        <i class="fas fa-folder"></i>
+                    </span>
+                    <span class="option-title">
+                        Master Data
+                    </span>
+                </div>
+                <div class="side-option">
+                    <span class="option-icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="option-title">
+                        User
+                    </span>
+                </div>
+                <div class="side-option">
+                    <span class="option-icon">
+                        <i class="fas fa-users"></i>
+                    </span>
+                    <span class="option-title">
+                        Role
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div id="dashboard">
+            <h2>
+                Dashboard
+            </h2>
+            <div id="card-section">
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="text-card">
+                        <div class="card-value">
+                            <h2>
+                                2.409
+                            </h2>
+                        </div>
+                        <div class="card-description">
+                            <h4>
+                                Jumlah Pemesan
+                            </h4> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="text-card">
+                        <div class="card-value">
+                            <h2>
+                                68,9%
+                            </h2>
+                        </div>
+                        <div class="card-description">
+                            <h4>
+                                Pesanan Selesai
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="text-card">
+                        <div class="card-value">
+                            <h2>
+                                68,9%
+                            </h2>
+                        </div>
+                        <div class="card-description">
+                            <h4>
+                                KPI Driver
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="text-card">
+                        <div class="card-value">
+                            <h2>
+                                3.509
+                            </h2>
+                        </div>
+                        <div class="card-description">
+                            <h4>
+                                Total Customer
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="stat-section">
+                <div id="stat-container">
+                    <div id="stat-corner">
+                        <div id="stat-title">
+                            Statistik Pemesanan
+                        </div>
+                        <div id="stat-calendar">
+                            <i class="fas fa-calendar"></i>
+                            <input type="date" value="2021-12-18" id="myDate">
+                        </div>
+                    </div>
+                    <div id="stat-datas">
+                    </div>
+                </div>
+                <div id="customer-container">
+                    <div id="customer-title">
+                        Customer Pemesan Terbanyak
+                    </div>
+                    <div id="customer-table">
+                        <table>
+                            <tr>
+                                <td>
+                                    PT Javan Cipta Solusi
+                                </td>
+                                <td>
+                                    450
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    CV ABCD
+                                </td>
+                                <td>
+                                    449
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    CV OQURY TRESNA ANJANI
+                                </td>
+                                <td>
+                                    443
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PT Javan Solusi
+                                </td>
+                                <td>
+                                    441
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PT Insan Cipta Solusi
+                                </td>
+                                <td>
+                                    420
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PT Mitra Informatika
+                                </td>
+                                <td>
+                                    412 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PT Gamatechno Indonesia
+                                </td>
+                                <td>
+                                    411
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Patra Jasa
+                                </td>
+                                <td>
+                                    390
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Patra Arun Badak  
+                                </td>
+                                <td>
+                                    387
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pertamina Corporate University
+                                </td>
+                                <td>
+                                    376
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pertamina RU IV
+                                </td>
+                                <td>
+                                    361
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PT Pertamina Kilang Balikpapan
+                                </td>
+                                <td>
+                                    355
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="overview-section">
+                <div id="overview-corner">
+                    <div id="overview-title">
+                        Overview Pemesanan
+                    </div>
+                    <input type="text" id="overview-search" placeholder="Search...">
+                </div>
+                <div id="overview-table">
+                    <table>
+                        <thead>
+                            <th>
+                                No
+                            </th>
+                            <th>
+                                Nama Customer
+                            </th>
+                            <th>
+                                Jenis
+                            </th>
+                            <th>
+                                Kuantitas
+                            </th>
+                            <th>
+                                Tanggal Pegiriman
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Brad Simmons
+                                </td>
+                                <td>
+                                    Pertamax
+                                </td>
+                                <td>
+                                    2000 Liter
+                                </td>
+                                <td>
+                                    21 Desember 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Jessie Clarcson
+                                </td>
+                                <td>
+                                    Turbo
+                                </td>
+                                <td>
+                                    2000 Liter
+                                </td>
+                                <td>
+                                    20 Desember 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Brad Simmons
+                                </td>
+                                <td>
+                                    Pertamax
+                                </td>
+                                <td>
+                                    2000 Liter
+                                </td>
+                                <td>
+                                    21 Desember 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Jessie Clarcson
+                                </td>
+                                <td>
+                                    Turbo
+                                </td>
+                                <td>
+                                    2000 Liter
+                                </td>
+                                <td>
+                                    20 Desember 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Brad Simmons
+                                </td>
+                                <td>
+                                    Pertamax
+                                </td>
+                                <td>
+                                    2000 Liter
+                                </td>
+                                <td>
+                                    21 Desember 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Jessie Clarcson
+                                </td>
+                                <td>
+                                    Turbo
+                                </td>
+                                <td>
+                                    2000 Liter
+                                </td>
+                                <td>
+                                    20 Desember 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Brad Simmons
+                                </td>
+                                <td>
+                                    Pertamax
+                                </td>
+                                <td>
+                                    2000 Liter
+                                </td>
+                                <td>
+                                    21 Desember 2021
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<footer>
+    <div id="page-menu">
+        <div id="previous">
+            Prev
+        </div>
+        <div id="pages">
+            <div id="page-number">
+                <input type="text" id="current-page" value="1">
+            </div>
+            <div id="page-number">
+                <input type="text" id="other-page" value="2">
+            </div>
+            <div id="page-number">
+                <input type="text" id="other-page" value="3">
+            </div>
+            <div id="page-number">
+                <input type="text" id="other-page" value="4">
+            </div>
+            <div id="page-number">
+                <input type="text" id="other-page" value="5">
+            </div>
+        </div>
+        <div id="next">
+            Next
+        </div>
+    </div>
+</footer>
+</html>
